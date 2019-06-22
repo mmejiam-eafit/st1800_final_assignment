@@ -1,0 +1,7 @@
+
+
+# Compiled source #
+###################
+./data/*.dat
+./notebooks/*.dat
+
