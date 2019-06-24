@@ -9,27 +9,27 @@ from nltk.stem.porter import PorterStemmer
 threshold = 0.1
 
 
-# def getSentimentAnalysis(string_list):
-# #     sentiment_analysis = [{}]*len(string_list)
-#     polarity = np.zeros(len(string_list))
-#     subjectivity = np.zeros(len(string_list))
-#     for i, string in enumerate(string_list):
-#         blob = TextBlob(string)
-#         polarity[i] = blob.sentiment.polarity
-#         subjectivity[i] = blob.sentiment.subjectivity
+def getSentimentAnalysis(string_list):
+#     sentiment_analysis = [{}]*len(string_list)
+    polarity = np.zeros(len(string_list))
+    subjectivity = np.zeros(len(string_list))
+    for i, string in enumerate(string_list):
+        blob = TextBlob(string)
+        polarity[i] = blob.sentiment.polarity
+        subjectivity[i] = blob.sentiment.subjectivity
 
-#     return (polarity, subjectivity)
+    return (polarity, subjectivity)
 
 
-# def getSentimentLabels(polarity):
-#     if np.abs(polarity) <= threshold:
-#         return 'NEUTRAL'
+def getSentimentLabels(polarity):
+    if np.abs(polarity) <= threshold:
+        return 'NEUTRAL'
     
-#     if polarity > threshold:
-#         return 'POSITIVE'
+    if polarity > threshold:
+        return 'POSITIVE'
     
-#     if polarity < -1*threshold:
-#         return 'NEGATIVE'
+    if polarity < -1*threshold:
+        return 'NEGATIVE'
     
    
 
