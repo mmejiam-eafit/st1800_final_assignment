@@ -1,5 +1,5 @@
 import numpy as np
-# from textblob import TextBlob
+from textblob import TextBlob
 import nltk
 import re
 
